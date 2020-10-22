@@ -1,0 +1,116 @@
+@import "fonts.scss";
+$font: 'FontAwesome'; 
+$black: #273337;
+$blue: #008FE5;
+body {
+    box-sizing: border-box;
+    padding: 0 !important; 
+    font-size: 15px; 
+    line-height: 1.65;
+    transition: .3s all; 
+    position: relative;
+    font-weight: normal;
+    overflow-x: hidden;
+    background: #fff;
+    font-family: 'Segoe UI';
+    h1, h2, h3, h4, h5, h6, p, label, ul, li, .card, a { 
+        text-decoration: none !important;      
+        transition: .3s all; 
+        margin-bottom: 0;  
+        outline: none !important;  
+    }  
+    a { 
+        transition: .3s all;
+        color: $black;
+    }
+    ul { 
+    	padding: 0;
+    	margin: 0;
+    }
+    input, button {
+    	outline: none !important;
+    	box-shadow: none;
+    	transition: .3s all;
+    }
+    .slick-slide {
+    	height: auto;
+    }
+    .container {
+        width: 100%;
+        max-width: 1630px;
+    }
+}
+.avarta {
+    overflow: hidden;
+    img {
+        transition: .7s all !important;
+        // &:hover {
+        //     transition: .7s all;
+        //     transform: scale(1.1);
+        // }
+    }
+}  
+.bg-blue {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: $blue;
+    width: 100%;
+    height: 410px;
+    z-index: -1;
+}
+// start menu
+header {
+    padding: 35px 0;
+    margin-bottom: 50px;
+}
+.h-menu {
+    ul {
+        display: flex;
+        width: 100%;
+        align-items: flex-end;
+        li {
+            list-style: none;
+            padding-right: 40px;
+            &:last-child {
+                padding-right: 0;
+            }
+        }
+    }
+    a {
+        font-size: 18px;
+        font-weight: bold;
+        color: #C2D7E3;
+        display: flex;
+        align-items: center;
+        img {
+            margin-right: 6px;
+        }
+        &.active {
+            color: #fff;
+        }
+    }
+}
+.m-right {
+    a {
+        display: flex;
+        font-weight: bold;
+        font-size: 18px;
+        align-items: center;
+        height: 40px;
+        padding: 0 30px;
+        border-radius: 35px;
+        min-width: 152px; 
+        justify-content: center;
+    }
+    .btn-app {
+        color: #5494F5;
+        background: #fff;
+        padding-bottom: 2px;
+    }
+    .btn-link {
+        color: #fff;
+        border: 1px solid #fff;
+    }
+}
+// end menu
